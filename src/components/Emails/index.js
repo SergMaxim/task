@@ -10,7 +10,6 @@ import Styles from './styles.scss';
 export default class Emails extends Component {
     constructor () {
         super();
-        this.openForm = ::this._openForm;
         this.getLetters = ::this._getLetters;
         this.searchLetters = ::this._searchLetters;
     }
@@ -24,11 +23,6 @@ export default class Emails extends Component {
 
     componentWillMount () {
         this.getLetters();
-    }
-    _openForm () {
-        this.setState({
-            isForm: !this.state.isForm
-        });
     }
 
     _searchLetters (comment) {

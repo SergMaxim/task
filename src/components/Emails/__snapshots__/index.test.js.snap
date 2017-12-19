@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Emails component Emails component should correspond to its snapshot counterpart 1`] = `
+<section
+  className="emails"
+>
+  <section
+    className="header"
+  >
+    <ul>
+      <li>
+        <a>
+          Home
+        </a>
+      </li>
+      <li>
+        Email
+      </li>
+    </ul>
+    <p>
+      Email
+    </p>
+  </section>
+  <div
+    className="emailsBody"
+  >
+    <section
+      className="menu"
+    >
+      <div
+        className="button"
+      >
+        Compose Mail
+      </div>
+    </section>
+    <section
+      className="letters"
+    >
+      <section
+        className="header"
+      >
+        <div>
+          Inbox 
+          <span>
+            0
+          </span>
+        </div>
+        <form
+          className="search"
+          onSubmit={[Function]}
+        >
+          <input
+            onKeyUp={[Function]}
+            placeholder="search"
+            type="text"
+          />
+          <input
+            type="submit"
+            value=""
+          />
+        </form>
+      </section>
+    </section>
+  </div>
+</section>
+`;

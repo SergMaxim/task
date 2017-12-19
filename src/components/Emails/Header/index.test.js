@@ -7,8 +7,7 @@ import Header from './';
 
 configure({ adapter: new Adapter() });
 
-const result = mount(<Header/>);
-
+const result = mount(<Header />);
 
 describe('User component', () => {
     test(`should have 1 'section' element`, () => {
@@ -23,5 +22,4 @@ describe('User component', () => {
     test(`should have 2 'li' element`, () => {
         expect(result.find('li')).toHaveLength(2);
     });
-
 });

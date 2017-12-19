@@ -9,4 +9,3 @@ import './theme/reset.css';
 import App from './containers/App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-//ReactDOM.render(element1, document.getElementById('root'));

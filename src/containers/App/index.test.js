@@ -1,4 +1,12 @@
-import { getLetters } from './fetch';
+import React from 'react';
+import { configure, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import dom from 'react-test-renderer';
+
+// Instruments
+import App from './index';
+
+configure({ adapter: new Adapter() });
 
 global.fetch = jest.fn(() => ({
     data: [
@@ -22,12 +30,11 @@ global.fetch = jest.fn(() => ({
     message: 'the request has succeeded'
 }));
 
-describe('getLetters: ', () => {
-    test('getLetters function shoud be s function', () => {
-        expect(typeof getLetters).toBe('function');
-    });
+const result = mount(<App />);
+const renderTree = dom.create(<App />).toJSON();
 
-    test('getLetters return shoud return a json value', () => {
-        expect(typeof getLetters('/letters.json')).toBe('object');
+describe('App component', () => {
+    test('App component should correspond to its snapshot counterpart', () => {
+        expect(renderTree).toMatchSnapshot();
     });
 });

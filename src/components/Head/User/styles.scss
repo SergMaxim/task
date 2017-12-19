@@ -36,7 +36,6 @@ $cubic2: cubic-bezier(.6, -.28, .735, .045);
     }
   }
   .buttonsInStart {
-    opacity: 0;
     height: 0;
   }
   .buttonsInEnd {
@@ -49,7 +48,6 @@ $cubic2: cubic-bezier(.6, -.28, .735, .045);
     height: 80px;
   }
   .buttonsOutEnd {
-    opacity: 0;
     height: 0;
     transition: opacity 500ms linear, height 500ms linear;
   }
