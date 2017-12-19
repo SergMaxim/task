@@ -1,0 +1,19 @@
+.menu{
+  width: 20%;
+  position: relative;
+
+  .button{
+    width: 80%;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #00b1ef;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    box-sizing: content-box;
+    margin-top: 10px;
+  }
+}

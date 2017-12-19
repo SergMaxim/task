@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User component User component should correspond to its snapshot counterpart 1`] = `
+<section
+  className="letter"
+>
+  <span
+    className="star"
+    style={
+      Object {
+        "backgroundPosition": "top center",
+      }
+    }
+  />
+  <div
+    className="name"
+  >
+     
+    name
+  </div>
+  <div
+    className="theme"
+  >
+     
+    theme
+  </div>
+  <time>
+    17.12.17 23:23
+  </time>
+</section>
+`;

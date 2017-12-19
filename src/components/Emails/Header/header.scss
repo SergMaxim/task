@@ -1,0 +1,28 @@
+.header{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8e3e7;
+  color:#313b3d;
+  clear: both;
+  padding: 0 20px;
+
+  p,ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  ul{
+    float: right;
+    color:#768387;
+
+    li{
+      list-style: none;
+      display: inline-block;
+      font-size: 12px;
+    }
+    li+li:before{
+      content: '/';
+      padding: 0 5px;
+    }
+  }
+}

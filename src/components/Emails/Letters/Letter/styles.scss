@@ -1,0 +1,42 @@
+.letter{
+  position: relative;
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items:center;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #d8e3e7;
+  cursor: pointer;
+  padding-left: 10px;
+
+  &:hover{
+    background-color: #ffffff;
+  }
+  .star, .name, .theme{
+    box-sizing: content-box;
+    color: #404661;
+    font-size: 14px;
+  }
+  .star{
+    max-width: 10%;
+    width: 20px;
+    height: 20px;
+    background-position: bottom center;
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    background-image: url("./assets/star.png");
+  }
+  .name{
+    width: 30%;
+    padding-left: 10px;
+  }
+  .theme{
+    width: 50%;
+  }
+  time{
+    padding-right: 20px;
+    width: 20%;
+    padding-left: 10px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,56 @@
+$cubic1: cubic-bezier(.55, .085, .68, .53);
+$cubic2: cubic-bezier(.6, -.28, .735, .045);
+
+.user{
+  width: 200px;
+  margin-left: 20px;
+  position: relative;
+  color:#768387;
+  float: right;
+
+  img{
+    float: left;
+    padding-right: 10px;
+    height: 35px;
+  }
+  span{
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-image: url('../../../theme/images/arrow.png');
+    cursor: pointer;
+    font-size: 14px;
+  }
+  ul{
+    position: absolute;
+    left:0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+
+    li{
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+  .buttonsInStart {
+    opacity: 0;
+    height: 0;
+  }
+  .buttonsInEnd {
+    opacity: 1;
+    height: 80px;
+    transition: opacity 500ms linear, height 500ms linear;
+  }
+  .buttonsOutStart {
+    opacity: 1;
+    height: 80px;
+  }
+  .buttonsOutEnd {
+    opacity: 0;
+    height: 0;
+    transition: opacity 500ms linear, height 500ms linear;
+  }
+}
